@@ -39,29 +39,3 @@
     background-position: center;
   }
 }
-
-/* features-icones */
-
-.feature__icon--group {
-  &::before {
-    background-image: url(../images/icon/icon-group.svg);
-  }
-}
-
-.feature__icon--clock {
-  &::before {
-    background-image: url(../images/icon/icon-clock.svg);
-  }
-}
-
-.feature__icon--diagram {
-  &::before {
-    background-image: url(../images/icon/icon-diagram.svg);
-  }
-}
-
-.feature__icon--astronaut {
-  &::before {
-    background-image: url(../images/icon/icon-astronaut.svg);
-  }
-}
