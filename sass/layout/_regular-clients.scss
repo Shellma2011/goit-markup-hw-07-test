@@ -1,14 +1,16 @@
 /* regular-clients -- Постоянные клиенты */
 
 .regular-clients__list {
-  @extend %flex-space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .regular-clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   @include border(--social-color);

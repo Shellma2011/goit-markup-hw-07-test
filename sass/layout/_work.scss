@@ -1,7 +1,11 @@
-/* work -- Чем мы занимаемся */
+// /* work -- Чем мы занимаемся */
 
 .work {
   margin-top: -94px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 /* .work__list {

@@ -1,20 +1,21 @@
-/* header */
+// /* header */
 
 .header {
   display: flex;
-  height: 80px;
+  height: 60px;
   @include border(--main-background-color);
 }
 
 .header-container {
-  @extend %flex-space-between;
-
-  align-items: center;
+  @extend %flex-space-between-center;
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
+  @extend %flex-space-between-center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-nav__link {
@@ -25,7 +26,7 @@
 /* Site-nav */
 
 .site-nav {
-  @extend %flex-space-between;
+  @extend %flex-space-between-center;
   margin-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -78,7 +79,7 @@
 /* Auth-nav */
 
 .auth-nav {
-  @extend %flex-space-between;
+  @extend %flex-space-between-center;
 
   & .header-nav__item {
     margin-right: 30px;

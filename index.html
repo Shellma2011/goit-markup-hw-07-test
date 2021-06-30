@@ -21,31 +21,32 @@
 
         <div class="container header-container">
 
-            <nav class="header-nav">
+            
                 <a href="./index.html" class="logo">Web<span class="logo--header">Studio</span>
                 </a>
-         
+                
+            <nav class="header-nav">
                 <ul class="site-nav">
                     <li class="header-nav__item"><a href="./index.html" class="header-nav__link pseudo">Студия</a></li>
                     <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфолио</a></li>
                     <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
                 </ul>
-
-            </nav>
-            
+                    
                 <ul class="auth-nav">
-                    <li class="header-nav__item"><a href="mailto:info@devstudio.com" class="header-nav__link">
-                        <svg class="auth-nav__icon auth-nav__icon--mail">
-                            <use href="./images/sprite.svg#mail"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                    <li class="header-nav__item"><a href="tel:+380961111111" class="header-nav__link">
-                        <svg class="auth-nav__icon auth-nav__icon--smartphone">
-                            <use href="./images/sprite.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                    </li>
-                </ul>
+                        <li class="header-nav__item"><a href="mailto:info@devstudio.com" class="header-nav__link">
+                            <svg class="auth-nav__icon auth-nav__icon--mail">
+                                <use href="./images/sprite.svg#mail"></use>
+                            </svg>
+                                info@devstudio.com</a></li>
+                        <li class="header-nav__item"><a href="tel:+380961111111" class="header-nav__link">
+                            <svg class="auth-nav__icon auth-nav__icon--smartphone">
+                                <use href="./images/sprite.svg#smartphone"></use>
+                            </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                
+            </nav>
             
         </div>
 
@@ -58,7 +59,7 @@
 
         <section class="hero">
 
-            <div class="container">
+            <div class="container hero__section">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="button primary" type="button" data-modal-open>Заказать услугу</button>
             </div>
@@ -73,22 +74,42 @@
             <div class="container">
 
                 <ul class="feature__list list">
-                    <li class="feature__elements feature__icon--group">
+                    <li class="feature__elements">
+                        <div class="feature__block-icon">
+                            <svg class="feature__icon" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-group"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature__title">Внимание к деталям</h3>
                         <p class="feature__text">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
-                    <li class="feature__elements feature__icon--clock">
+                    <li class="feature__elements">
+                        <div class="feature__block-icon">
+                            <svg class="feature__icon" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature__title">Пунктуальность</h3>
                         <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет за собой.</p>
                     </li>
-                    <li class="feature__elements feature__icon--diagram">
+                    <li class="feature__elements">
+                        <div class="feature__block-icon">
+                            <svg class="feature__icon" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature__title">Планирование</h3>
                         <p class="feature__text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="feature__elements feature__icon--astronaut">
+                    <li class="feature__elements">
+                        <div class="feature__block-icon">
+                            <svg class="feature__icon" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature__title">Современные технологии</h3>
                         <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.</p>
@@ -140,7 +161,7 @@
                 <ul class="our-team__list">
                     
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоИгорьДемьяненко.jpg" alt="фото Игорь Демьяненко" width="270">
+                        <img class="our-team__photo" src="./images/фотоИгорьДемьяненко.jpg" alt="фото Игорь Демьяненко" width="450">
                         <div class="our-team__card">
                             <h3 class="our-team__name">Игорь Демьяненко</h3>
                             <p class="our-team__position">Product Designer</p>
@@ -148,8 +169,8 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                                     
-                                        <svg class="social__icon">
-                                        <use href="./images/sprite.svg#instagram"></use>
+                                        <svg class="social__icon" width="20" height="20">
+                                            <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -157,7 +178,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                                 
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -166,7 +187,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                                 
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -174,7 +195,7 @@
 
                                 <li class="social__item">
                                     <a class="social__link" href="">
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -185,7 +206,7 @@
                     </li>
 
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоОльгаРепина.jpg" alt="фото Ольга Репина" width="270">
+                        <img class="our-team__photo" src="./images/фотоОльгаРепина.jpg" alt="фото Ольга Репина" width="450">
                         <div class="our-team__card">
                             <h3 class="our-team__name">Ольга Репина</h3>
                             <p class="our-team__position">Frontend Developer</p>
@@ -193,7 +214,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                             
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -202,7 +223,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                             
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -211,7 +232,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                             
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -219,7 +240,7 @@
                             
                                 <li class="social__item">
                                     <a class="social__link" href="">
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -229,7 +250,7 @@
                     </li>
 
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоНиколайТарасов.jpg" alt="фото Николай Тарасов" width="270">
+                        <img class="our-team__photo" src="./images/фотоНиколайТарасов.jpg" alt="фото Николай Тарасов" width="450">
                         <div class="our-team__card">  
                             <h3 class="our-team__name">Николай Тарасов</h3>
                             <p class="our-team__position">Marketing</p>
@@ -237,7 +258,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                             
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -246,7 +267,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                             
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -255,7 +276,7 @@
                                 <li class="social__item">
                                     <a class="social__link" href="">
                             
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -263,7 +284,7 @@
                             
                                 <li class="social__item">
                                     <a class="social__link" href="">
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -274,7 +295,7 @@
                     </li>
 
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоМихаилЕрмаков.jpg" alt="фото Михаил Ермаков" width="270">
+                        <img class="our-team__photo" src="./images/фотоМихаилЕрмаков.jpg" alt="фото Михаил Ермаков" width="450">
                         <div class="our-team__card"> 
                             
                             <h3 class="our-team__name">Михаил Ермаков</h3>
@@ -285,7 +306,7 @@
 
                                 <li class="social__item">
                                     <a class="social__link" href="">
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -293,7 +314,7 @@
                             
                                 <li class="social__item">
                                     <a class="social__link" href="">
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -301,7 +322,7 @@
                             
                                 <li class="social__item">
                                     <a class="social__link" href="">
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -309,7 +330,7 @@
                             
                                 <li class="social__item">
                                     <a class="social__link" href="">
-                                        <svg class="social__icon">
+                                        <svg class="social__icon" width="20" height="20">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -431,7 +452,7 @@
                 
                     <li class="social__item">
                         <a class="social__link--footer" href="">
-                            <svg class="social__icon">
+                            <svg class="social__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#twitter"></use>
                             </svg>
                         </a>
@@ -439,7 +460,7 @@
                 
                     <li class="social__item">
                         <a class="social__link--footer" href="">
-                            <svg class="social__icon">
+                            <svg class="social__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#facebook"></use>
                             </svg>
                         </a>
@@ -447,7 +468,7 @@
                 
                     <li class="social__item">
                         <a class="social__link--footer" href="">
-                            <svg class="social__icon">
+                            <svg class="social__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#linkedin"></use>
                             </svg>
                         </a>

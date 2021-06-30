@@ -9,14 +9,16 @@
   justify-content: space-between;
 } */
 
-.our-team__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
+// .our-team__list {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 30px;
+// }
 
 .our-team__elements {
-  width: 270px;
+  min-width: 450px;
+  min-height: 460px;
+
   /* margin-right: 30px; */
   background: var(--project-group-container-background-color);
   box-shadow: var(--box-shadow-our-team-elements);
@@ -46,6 +48,7 @@
 .our-team__card {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .our-team__position {
